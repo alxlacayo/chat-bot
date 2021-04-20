@@ -37,7 +37,7 @@ app.get('/webhook', (req, res) => {
             // Responds with the challenge token from the request
             console.log('WEBHOOK_VERIFIED');
 
-            // Setup the Facebook messenger bot.
+            // Configure the Facebook messenger bot.
             // Very hacky, will improve shortly.
             GraphAPI.setupMessengerProfile() 
             .then(function (response) {
