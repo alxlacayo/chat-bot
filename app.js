@@ -38,7 +38,7 @@ app.get('/webhook', (req, res) => {
             console.log('WEBHOOK_VERIFIED');
 
             // Setup the Facebook messenger bot.
-            // Very hacky. Will improve shortly.
+            // Very hacky, will improve shortly.
             GraphAPI.setupMessengerProfile() 
             .then(function (response) {
                 console.log(response);
